@@ -71,13 +71,15 @@
             border-radius: 12px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             margin-bottom: 50px;
+            overflow: hidden;
         }
 
         iframe {
             width: 100%;
             height: 100%;
             border-radius: 12px;
-            border: none; /* Ensure no border */
+            object-fit: cover; /* Ensures the video will crop and fit the container */
+            border: none;
         }
 
         /* About Me Section */
@@ -88,14 +90,14 @@
             max-width: 800px;
             border-radius: 12px;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-            margin-top: 50px;  /* Ensures space between video and About Me section */
+            margin-top: 50px;
             color: #ecf0f1;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-bottom: 50px; /* Space before footer */
+            margin-bottom: 50px;
         }
 
         .about-me h3 {
@@ -142,11 +144,11 @@
             }
 
             .video-container {
-                height: 350px; /* Make the video panel smaller on smaller devices */
+                height: 350px;
             }
 
             .content {
-                width: 95%; /* Ensure content takes up most of the screen on small devices */
+                width: 95%;
             }
         }
 
@@ -157,7 +159,7 @@
             }
 
             .video-container {
-                height: 250px; /* Reduce the video size further for very small screens */
+                height: 250px;
             }
 
             .about-me h3 {
@@ -183,7 +185,8 @@
 
         <!-- Video Embed -->
         <div class="video-container">
-            <iframe src="https://drive.google.com/file/d/1PhwqaXuqYxZ1aCZYD1XjpNwFC0Xf29AT/preview?pli=1" 
+            <!-- Proper Google Drive Video Embed -->
+            <iframe src="https://drive.google.com/file/d/1PhwqaXuqYxZ1aCZYD1XjpNwFC0Xf29AT/preview" 
                     allow="autoplay; fullscreen" 
                     allowfullscreen></iframe>
         </div>
