@@ -1,5 +1,30 @@
 <!DOCTYPE html>
-<
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar - Watch Video</title>
+
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;  /* Ensures the page stretches to fill the screen */
+            overflow-x: hidden; /* Prevents horizontal scrollbar */
+        }
+
+        /* Top Banner */
+        .top-banner {
             background: linear-gradient(135deg, #2980b9, #8e44ad);
             width: 100%;
             padding: 40px 0;
@@ -157,7 +182,11 @@
         <h1>Interstellar</h1>
 
         <!-- Video Embed -->
-       
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1PhwqaXuqYxZ1aCZYD1XjpNwFC0Xf29AT/preview" 
+                    allow="autoplay; fullscreen" 
+                    allowfullscreen></iframe>
+        </div>
 
         <!-- About Me Section (Centered) -->
         <div class="about-me">
